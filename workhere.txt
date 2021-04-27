@@ -1,0 +1,9 @@
+source .venv/bin/activate
+pip freeze > requirements.txt
+
+# instalar eurocodepy
+
+
+# existe no github -> pcachim/eurocodesnb
+# publicado no Heroku.com
+
