@@ -1,1 +1,1 @@
-web: jupyter lab -ip 0.0.0.0 --port $PORT
+web: voila --port=$PORT --no-browser --show_tracebacks=True ec-base.ipynb
