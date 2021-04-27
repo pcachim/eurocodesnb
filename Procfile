@@ -1,1 +1,1 @@
-web: jupyter lab --port $PORT
+web: jupyter lab -ip 0.0.0.0 --port $PORT
