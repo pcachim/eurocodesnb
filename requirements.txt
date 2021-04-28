@@ -4,6 +4,7 @@ numpy==1.20.2
 pandas==1.2.4
 plotly==4.14.3
 scipy==1.6.3
-ipython==7.22.0
-ipython-genutils==0.2.0
-ipywidgets==7.6.3
+jupyterlab==3.0.14
+jupyterlab-pygments==0.1.2
+jupyterlab-server==2.5.0
+jupyterlab-widgets==1.0.0
