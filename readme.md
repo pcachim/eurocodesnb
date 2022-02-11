@@ -30,4 +30,4 @@ EC5 (EN 1995) notebooks can be found [here](ec5/ec5-base.ipynb).
 
 There are also some tools to help in some common tasks that can be usefull:
 
-[Read an Excel file](ec-base.ipynb)
+[Read an Excel file](ec-read-from-excel.ipynb)
