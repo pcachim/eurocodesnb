@@ -4,3 +4,7 @@ numpy
 pandas
 plotly
 scipy
+ipykernel
+ipython
+ipython-genutils
+ipywidgets
