@@ -2,7 +2,7 @@
 import numpy as np
 
 
-def calc_parabola(x1, y1, x2, y2, x3, y3):
+def calc_parabola(x1, y1, x2, y2, x3, y3, nump=20):
     '''
     Adapted and modifed to get the unknowns for defining a parabola:
     http://stackoverflow.com/questions/717762/how-to-calculate-the-vertex-of-a-parabola-given-three-points
@@ -14,14 +14,8 @@ def calc_parabola(x1, y1, x2, y2, x3, y3):
     c     = (x2 * x3 * (x2-x3) * y1+x3 * x1 * (x3-x1) * y2+x1 * x2 * (x1-x2) * y3) / denom;
 
     #Define x range for which to calc parabola
-    x_pos=np.linspace(x1, x3, 20)
-    y_pos=np.zeros(20)
-
-    #Calculate y values 
-    for x in range(len(x_pos)):
-        x_val=x_pos[x]
-        y=(a*(x_val**2))+(b*x_val)+c
-        y_pos[x] = y
+    x_pos=np.linspace(x1, x3, nump)
+    y_pos = (a*x_pos+b)*x_pos+c
 
     #return np.array([x_pos],[y_pos])
     return x_pos, y_pos
