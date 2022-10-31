@@ -17,5 +17,4 @@ def calc_parabola(x1, y1, x2, y2, x3, y3, nump=20):
     x_pos=np.linspace(x1, x3, nump)
     y_pos = (a*x_pos+b)*x_pos+c
 
-    #return np.array([x_pos],[y_pos])
     return x_pos, y_pos
