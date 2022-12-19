@@ -1,0 +1,3 @@
+pip-tools==6.12.1
+jupyterlab==3.5.2
+voila==0.4.0
