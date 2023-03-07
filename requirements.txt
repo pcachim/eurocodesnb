@@ -24,7 +24,7 @@ decorator==5.1.1
     # via ipython
 entrypoints==0.4
     # via jupyter-client
-eurocodepy==0.1.9
+eurocodepy==0.1.18
     # via -r requirements.in
 executing==1.2.0
     # via stack-data
