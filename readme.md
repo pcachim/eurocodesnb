@@ -1,16 +1,15 @@
 # EurocodesNB
 
-EurocodesNB is a project that contains a series of Jupyter Notebooks to work with the structural Eurocodes. The Eurocodes are a set of European standards for the design of buildings and other civil engineering works. They provide a common approach to the design of structures and are used throughout Europe. 
+EurocodesNB is a project that contains a series of Jupyter Notebooks to work with the structural Eurocodes. The Eurocodes are a set of European standards for the design of buildings and other civil engineering works. They provide a common approach to the design of structures and are used throughout Europe.
 
 EurocodesNB has a collection of notebooks for the design of structures according to the Eurocodes. The notebooks cover various topics related to Eurocodes, including structural analysis, steel design, concrete design, timber design, and geotechnical design.
 
 ## Installation
 
-To use these notebooks, you will need to have Python installed on your system along with several packages such as NumPy, SciPy, and Matplotlib. 
-To use EurocodesNB, you will need to have Jupyter Notebook installed on your computer. You can install Jupyter Notebook using pip:
+To use these notebooks, you will need to have Python installed on your system along with several packages such as NumPy, SciPy, and Matplotlib. To use EurocodesNB, you will also need to have Jupyter Notebook installed on your computer. You can install JupyterLab using pip:
 
 ```sh
-pip install jupyter
+pip install jupyterlab
 ```
 
 Once you have Jupyter Notebook installed, you can clone this repository to your local machine by running the following command:
@@ -21,14 +20,18 @@ git clone https://github.com/pcachim/eurocodesnb.git
 
 ## Usage
 
-To use EurocodesNB, navigate to the directory where you downloaded the project and start Jupyter Notebook:
+To use EurocodesNB, navigate to the directory where you downloaded the project and start JupyterLab:
 
 ```shell
 cd eurocodesnb
-jupyter notebook
+jupyter lab
 ```
 
 This should open a new tab in your web browser showing the Jupyter Notebook interface. From here, you can browse the notebooks and run them by clicking on the `.ipynb` files and start working with the Eurocodes.
+
+Alternatively, you can use standalone applications to work with Jupyter Notebooks, such as [Visual Studio Code](https://code.visualstudio.com) or [JupyterLab Desktop](https://github.com/jupyterlab/jupyterlab-desktop).
+
+You can try the notebooks without any installation via [mybinder.org](https://mybinder.org/v2/gh/pcachim/eurocodesnb/HEAD?urlpath==lab) [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pcachim/eurocodesnb/HEAD?urlpath==lab)
 
 ## Available notebooks
 
