@@ -1,14 +1,34 @@
-# Eurocode notebooks
+# EurocodesNB
 
-This is a project with some tools to help designers and students working with eurocodes. There are notebooks for some of the eurocodes, mostly Eurocodes 2 and 5.
+EurocodesNB is a project that contains a series of Jupyter Notebooks to work with the structural Eurocodes. The Eurocodes are a set of European standards for the design of buildings and other civil engineering works. They provide a common approach to the design of structures and are used throughout Europe. 
 
-You can run the notebooks also in JupyterLab via [mybinder.org](mybinder.org)
+EurocodesNB has a collection of notebooks for the design of structures according to the Eurocodes. The notebooks cover various topics related to Eurocodes, including structural analysis, steel design, concrete design, timber design, and geotechnical design.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/pcachim/eurocodesnb/master?urlpath=lab%2Ftree%2Fec-base.ipynb)
+## Installation
 
-For the workbooks to work there are some libraries that must be installed in your Python environment. The most important are the [SciPy](https://www.scipy.org) suite (numpy, pandas, matplotlib, scipy and ipython, with sympy being also an interesting one), [plotly](https://plotly.com/python) and [eurocodepy](https://pypi.org/project/eurocodepy/).
+To use these notebooks, you will need to have Python installed on your system along with several packages such as NumPy, SciPy, and Matplotlib. 
+To use EurocodesNB, you will need to have Jupyter Notebook installed on your computer. You can install Jupyter Notebook using pip:
 
-The notebooks can be found in [GitHub](https://github.com/pcachim/eurocodesnb) and you can clone them using [git](https://github.com/pcachim/eurocodesnb.git).
+```sh
+pip install jupyter
+```
+
+Once you have Jupyter Notebook installed, you can clone this repository to your local machine by running the following command:
+
+```bsh
+git clone https://github.com/pcachim/eurocodesnb.git
+```
+
+## Usage
+
+To use EurocodesNB, navigate to the directory where you downloaded the project and start Jupyter Notebook:
+
+```shell
+cd eurocodesnb
+jupyter notebook
+```
+
+This should open a new tab in your web browser showing the Jupyter Notebook interface. From here, you can browse the notebooks and run them by clicking on the `.ipynb` files and start working with the Eurocodes.
 
 ## Available notebooks
 
@@ -26,8 +46,16 @@ EC2 (EN 1992-1-2) notebooks on fire design can be found [here](./ec2/fire/ec2-fi
 
 EC5 (EN 1995) notebooks can be found [here](ec5/ec5-base.ipynb).
 
-## Additional tools
+### Additional tools
 
 There are also some tools to help in some common tasks that can be usefull:
 
 [Read an Excel file](ec-read-from-excel.ipynb)
+
+## Contributing
+
+We welcome contributions from the community! If you find any errors or have suggestions for improving the notebooks, please feel free to open an issue or submit a pull request. If you would like to contribute to EurocodesNB, please fork the project on GitHub and submit a pull request with your changes.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
