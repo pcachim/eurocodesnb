@@ -3,6 +3,7 @@ seaborn
 pandas
 plotly
 scipy
+openpyxl
 ipykernel==6.16.2
 ipython==8.5.0
 ipython-genutils==0.2.0
