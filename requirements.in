@@ -1,8 +1,7 @@
 eurocodepy==0.1.18
-seaborn==0.12.2
+seaborn==0.13.1
 pandas==2.0.1
 plotly==5.14.1
-pillow==10.2.0
 scipy==1.10.1
 openpyxl==3.1.2
 ipykernel==6.16.2
