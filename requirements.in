@@ -1,9 +1,10 @@
 eurocodepy==0.1.18
-seaborn
-pandas
-plotly
-scipy
-openpyxl
+seaborn==0.12.2
+pandas==2.0.1
+plotly==5.14.1
+pillow==10.2.0
+scipy==1.10.1
+openpyxl==3.1.2
 ipykernel==6.16.2
 ipython==8.5.0
 ipython-genutils==0.2.0
