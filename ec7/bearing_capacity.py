@@ -1,6 +1,15 @@
 import numpy as np
 
 
+soil_gamma_rd = {
+    "compact sand": 1.0,
+    "dry loose sand": 1.15,
+    "saturated loose sand": 1.5,
+    "non sensitive clay": 1.0,
+    "sensitive clay": 1.15
+}
+
+
 def bearing_capacity(phi, gamma, q, Bx, By, Hx, Hy, V, c=0, drained=True):
     """calculates the bearing capacity of a shallow foundation according with Eurocode 7 (EN 1997-1:2004)
 
@@ -24,14 +33,6 @@ def bearing_capacity(phi, gamma, q, Bx, By, Hx, Hy, V, c=0, drained=True):
     B = np.where(Bx <= By, Bx, By)
     L = np.where(Bx <= By, By, Bx)
     theta = np.where(Bx <= By, np.arctan2(Hx, Hy), np.arctan2(Hy, Hx))
-    # if Bx <= By:
-    #     B = Bx
-    #     L = By
-    #     theta = np.arctan2(Hx, Hy)
-    # else:
-    #     B = By
-    #     L = Bx
-    #     theta = np.arctan2(Hy, Hx)
 
     if drained:
         mb = (2+B/L)/(1+B/L)
@@ -66,14 +67,16 @@ def bearing_capacity(phi, gamma, q, Bx, By, Hx, Hy, V, c=0, drained=True):
 
     return bearing
 
-fhi = np.radians(np.array([32.5, 27, 32.5]))
-B = np.array([2.05, 2.63, 3.06])
-d = 0.8
-gamma = 19
-q = d*gamma
-H = np.array([274.6, 274.7, 202.0])
-V = np.array([716.4, 557.0, 530.5])
-bearing = bearing_capacity(fhi, gamma, q, B, 100000.0, H, 0, V, 0, True)
-print(f"Bearing capacity: {bearing} kN/m²")
-print(f"Bearing capacity: {bearing*B} kN")
+
+if __name__ == "__main__":
+    fhi = np.radians(np.array([32.5, 27, 32.5]))
+    B = np.array([2.05, 2.63, 3.06])
+    d = 0.8
+    gamma = 19
+    q = d*gamma
+    H = np.array([274.6, 274.7, 202.0])
+    V = np.array([716.4, 557.0, 530.5])
+    bearing = bearing_capacity(fhi, gamma, q, B, B, H, H, V, 0, True)
+    print(f"Bearing capacity: {np.round(bearing, 1)} kN/m²")
+    print(f"Bearing capacity: {np.round(bearing*B, 1)} kN")
 

@@ -35,7 +35,7 @@
 
     Foundation soil parameters:
         Unit weight = 20.0 kN/m³
-        Internal friction angle (phi) = 35.0°
+        Internal friction angle (phi) = 30.0°
         Friction angle on footing base (delta) = 30.0°
         Admissible bearing capacity (sigma_adm) = 300 kPa
 
@@ -162,8 +162,8 @@
         ned = 519.0 kN/m
         exc = 0.17 m
         sig_act = 167 kPa
-        sig_adm = 825 kPa
-        SF = 4.94
+        sig_adm = 397 kPa
+        SF = 2.38
         status = True
 
         Reinforcement bending design:
@@ -197,8 +197,8 @@
         ned = 523.4 kN/m
         exc = 0.33 m
         sig_act = 188 kPa
-        sig_adm = 591 kPa
-        SF = 3.14
+        sig_adm = 300 kPa
+        SF = 1.59
         status = True
 
         Reinforcement bending design:
@@ -232,8 +232,8 @@
         ned = 555.2 kN/m
         exc = 0.56 m
         sig_act = 239 kPa
-        sig_adm = 383 kPa
-        SF = 1.61
+        sig_adm = 300 kPa
+        SF = 1.26
         status = True
 
         Reinforcement bending design:
@@ -267,8 +267,8 @@
         ned = 523.0 kN/m
         exc = 0.56 m
         sig_act = 225 kPa
-        sig_adm = 374 kPa
-        SF = 1.66
+        sig_adm = 300 kPa
+        SF = 1.34
         status = True
 
         Reinforcement bending design:
@@ -302,8 +302,8 @@
         ned = 565.1 kN/m
         exc = 0.65 m
         sig_act = 263 kPa
-        sig_adm = 317 kPa
-        SF = 1.20
+        sig_adm = 300 kPa
+        SF = 1.14
         status = True
 
         Reinforcement bending design:
@@ -337,7 +337,7 @@
         ned = 522.3 kN/m
         exc = 0.66 m
         sig_act = 244 kPa
-        sig_adm = 302 kPa
+        sig_adm = 300 kPa
         SF = 1.23
         status = True
 
